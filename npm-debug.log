@@ -1,70 +1,36 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/andrew/.nvm/v0.11.14/bin/node',
 1 verbose cli   '/home/andrew/.nvm/v0.11.14/bin/npm',
-1 verbose cli   'install' ]
+1 verbose cli   'run',
+1 verbose cli   'protractor' ]
 2 info using npm@2.0.0
 3 info using node@v0.11.14
-4 verbose readDependencies using package.json deps
-5 verbose install where, deps [ '/home/andrew/cse112/angular-phonecat',
-5 verbose install   [ 'karma',
-5 verbose install     'karma-chrome-launcher',
-5 verbose install     'karma-jasmine',
-5 verbose install     'protractor',
-5 verbose install     'http-server',
-5 verbose install     'tmp',
-5 verbose install     'bower',
-5 verbose install     'shelljs' ] ]
-6 info preinstall angular-phonecat@0.0.0
-7 warn package.json karma-chrome-launcher@0.1.7 No README data
-8 verbose readDependencies using package.json deps
-9 verbose already installed skipping karma@^0.12.16 /home/andrew/cse112/angular-phonecat
-10 verbose already installed skipping karma-chrome-launcher@^0.1.4 /home/andrew/cse112/angular-phonecat
-11 verbose already installed skipping karma-jasmine@^0.1.5 /home/andrew/cse112/angular-phonecat
-12 verbose already installed skipping protractor@~1.0.0 /home/andrew/cse112/angular-phonecat
-13 verbose already installed skipping http-server@^0.6.1 /home/andrew/cse112/angular-phonecat
-14 verbose already installed skipping tmp@0.0.23 /home/andrew/cse112/angular-phonecat
-15 verbose already installed skipping bower@^1.3.1 /home/andrew/cse112/angular-phonecat
-16 verbose already installed skipping shelljs@^0.2.6 /home/andrew/cse112/angular-phonecat
-17 silly resolved []
-18 info build /home/andrew/cse112/angular-phonecat
-19 verbose linkStuff [ false, false, false, '/home/andrew/cse112' ]
-20 info linkStuff angular-phonecat@0.0.0
-21 verbose linkBins angular-phonecat@0.0.0
-22 verbose linkMans angular-phonecat@0.0.0
-23 verbose rebuildBundles angular-phonecat@0.0.0
-24 verbose rebuildBundles [ '.bin',
-24 verbose rebuildBundles   'bower',
-24 verbose rebuildBundles   'http-server',
-24 verbose rebuildBundles   'karma',
-24 verbose rebuildBundles   'karma-chrome-launcher',
-24 verbose rebuildBundles   'karma-jasmine',
-24 verbose rebuildBundles   'protractor',
-24 verbose rebuildBundles   'shelljs',
-24 verbose rebuildBundles   'tmp' ]
-25 info install angular-phonecat@0.0.0
-26 info postinstall angular-phonecat@0.0.0
-27 verbose unsafe-perm in lifecycle true
-28 info angular-phonecat@0.0.0 Failed to exec postinstall script
-29 verbose stack Error: Exit status 1
-29 verbose stack     at ChildProcess.<anonymous> (/home/andrew/.nvm/v0.11.14/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
-29 verbose stack     at ChildProcess.emit (events.js:110:17)
-29 verbose stack     at maybeClose (child_process.js:1000:16)
-29 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1072:5)
-30 verbose pkgid angular-phonecat@0.0.0
-31 verbose cwd /home/andrew/cse112/angular-phonecat
-32 error Linux 3.13.0-44-generic
-33 error argv "/home/andrew/.nvm/v0.11.14/bin/node" "/home/andrew/.nvm/v0.11.14/bin/npm" "install"
-34 error node v0.11.14
-35 error npm  v2.0.0
-36 error code ELIFECYCLE
-37 error angular-phonecat@0.0.0 postinstall: `bower install`
-37 error Exit status 1
-38 error Failed at the angular-phonecat@0.0.0 postinstall script.
-38 error This is most likely a problem with the angular-phonecat package,
-38 error not with npm itself.
-38 error Tell the author that this fails on your system:
-38 error     bower install
-38 error You can get their info via:
-38 error     npm owner ls angular-phonecat
-38 error There is likely additional logging output above.
-39 verbose exit [ 1, true ]
+4 verbose run-script [ 'preprotractor', 'protractor', 'postprotractor' ]
+5 info preprotractor angular-phonecat@0.0.0
+6 verbose unsafe-perm in lifecycle true
+7 info protractor angular-phonecat@0.0.0
+8 verbose unsafe-perm in lifecycle true
+9 info angular-phonecat@0.0.0 Failed to exec protractor script
+10 verbose stack Error: Exit status 1
+10 verbose stack     at ChildProcess.<anonymous> (/home/andrew/.nvm/v0.11.14/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+10 verbose stack     at ChildProcess.emit (events.js:110:17)
+10 verbose stack     at maybeClose (child_process.js:1000:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1072:5)
+11 verbose pkgid angular-phonecat@0.0.0
+12 verbose cwd /home/andrew/cse112/angular-phonecat
+13 error Linux 3.13.0-44-generic
+14 error argv "/home/andrew/.nvm/v0.11.14/bin/node" "/home/andrew/.nvm/v0.11.14/bin/npm" "run" "protractor"
+15 error node v0.11.14
+16 error npm  v2.0.0
+17 error code ELIFECYCLE
+18 error angular-phonecat@0.0.0 protractor: `protractor test/protractor-conf.js`
+18 error Exit status 1
+19 error Failed at the angular-phonecat@0.0.0 protractor script.
+19 error This is most likely a problem with the angular-phonecat package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     protractor test/protractor-conf.js
+19 error You can get their info via:
+19 error     npm owner ls angular-phonecat
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]
